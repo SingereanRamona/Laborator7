@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+ 
+</style>
+<head>
+<script>
+function myfunction(){
+document.getElementById("nume").innerHTML ="Singerean Ramona Delia: inginer";
+					 
+var tabelEducatie= document.getElementById("tabel");
+ tabelEducatie.rows[0].cells[0].innerHTML="UTCN";
+ tabelEducatie.rows[0].cells[2].innerHTML="Lucrul in echipa";
+ tabelEducatie.rows[1].cells[0].innerHTML="CNMV";
+tabelEducatie.rows[1].cells[2].innerHTML="Management";
+tabelEducatie.rows[2].cells[0].innerHTML="Voluntariat";
+tabelEducatie.rows[2].cells[1].innerHTML="Anul 3";
+tabelEducatie.rows[2].cells[2].innerHTML="Intership MSAL";
+ tabelEducatie.rows[3].cells[0].innerHTML="Vorbitul in public";
+ tabelEducatie.rows[3].cells[1].innerHTML="Anul 4";
+ tabelEducatie.rows[3].cells[2].innerHTML="Proiect finalizat";
+ document.getElementById("lista").innerHTML ="Realizari";
+ document.getElementById("lista1").innerHTML ="Proiecte";
+ document.getElementById("lista2").innerHTML ="Burse";
+ document.getElementById("lista3").innerHTML ="Schimburi de experienta";
+ document.getElementById("poza").src="imagine_noua.jpg";
+					 
+ document.body.style.backgroundColor="pink";
+					 
+ var par = document.getElementByTagNume("p");
+ var i;
+ for(i = 0; i < par.lenght; i++) {
+ par[i].style.color= "green";}
+					 
+document.getElementById("poza").style.opacity= "0.9";
+document.getElementById("poza").style.border = "6px";
+					 }
+					 function arVarst() {
+				     var azi = new Date;
+					 var varstMea;
+					 
+					 var anNasc = document.getElementById("varsta").innerHTML;
+					 
+					 varstMea = azi.getFullYear() - parseInt(anNasc);
+					 
+					 document.getElementById("varsta").innerHTML = varstMea;
+				}
+</script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="paginapersonala.css">
+<h1>Fisa personala</h1>
+<h2 id="nume">Singerean Ramona Delia</h2>
+<p>Email:ramona_singerean@yahoo.com</p>
+<p onmouseover = "arVarst()" id="varsta">2001</p>
+<p id="poza">Poza:<img src="Poza_wapp.jpg"</p>
+<p>Citat:Natura ne aseamăna. Educaţia ne deosebeşte. – Confucius</p>
+<table id="tabel" style="width:100%">
+  <tr>
+    <th>Disciplina</th>
+    <th>Anul desfasurarii</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Analiza matematica</td>
+    <td>2020-2021</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3101.pdf">Analiza.com</a></td>
+  </tr>
+  <tr>
+    <td>Algebra liniara</td>
+    <td>2020-2021</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf">Algebra.com</a></td>
+  </tr>
+  <tr>
+  <td>Elemente de fizica</td>
+  <td>2020-2021</td>
+  <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3103.pdf">Fizica.com</a></td>
+  </tr>
+</table>
+<p id="lista">Hobbyuri:</p>
+
+  <li id="lista1">Sportul</li>
+  <li id="lista2">Calatoriile</li>
+  <li id="lista3">Muzica</li>
+</ul>
+<a href="file:///C:/Users/Asus/Desktop/IA/exercitiul3.html">Catalog</a>
+</body>
+<link rel="stylesheet" type="text/css" href="fisacatalog.css">
+<button type="button" onclick="myfunction()">Alta viata!</button>
+</html>

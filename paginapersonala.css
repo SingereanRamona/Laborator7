@@ -1,0 +1,36 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+p
+{
+	color:red;
+}
+img {
+	opacity: 0.5;
+	border-radius: 50%;
+	}
+	{
+  background-color: green;
+}
+
+
+table,th,td
+{
+ border: 1px solid black;
+ margin: 25px 10px 75px 10px;
+ background-color: blue;
+ }
+ * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+	
